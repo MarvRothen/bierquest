@@ -1,0 +1,33 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: #87ceeb;
+}
+#startScreen, #gameOverScreen, #winScreen {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#gameContainer {
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
